@@ -1,0 +1,76 @@
+.menu{
+  background-image: url(../assets/menu-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.menu-title{
+  font-family: 'Tinos', serif;
+  font-size: 54px;
+  padding-top: 60px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.menu-item{
+  background-color: #fff;
+  text-align: center;
+  width: 30%;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin-right: 20px;
+}
+
+.menu-text{
+  font-family: 'Tinos', serif;
+  font-size: 26px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.menu-subtext{
+  font-size: 16px;
+}
+
+.menu-btn{
+  background-color: #D67E34;
+  text-decoration: none;
+  padding: 14px 67px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px 0px #00000040;
+}
+
+.menu-button{
+  margin-top: 20px;
+}
+
+.price-img{
+  position: absolute;
+  bottom: 0;
+  right: 58px;
+}
+
+.menu-image{
+  position: relative;
+}
+
+.menu-img{
+  border-radius: 200px;
+}
+
+.price-420{
+  position: absolute;
+  bottom: 28px;
+  right: 78px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.menu-items{
+  display: flex;
+  justify-content: center;
+}

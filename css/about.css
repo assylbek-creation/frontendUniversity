@@ -1,0 +1,67 @@
+.container-fluid{
+  margin: 0 5%;
+  font-family: Montserrat;
+}
+
+.row{
+  text-align: center;
+}
+
+.hist-text{
+  margin-top: 150px;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  padding: 0 15%;
+}
+
+#history{
+  color: #DAA520;
+}
+
+.history-images{
+  position: relative;
+}
+
+.images-1{
+  position: absolute;;
+  z-index: 3;
+  top: 80px;
+  left: 0px;
+  bottom: -182px;
+  right: 228.600px;
+}
+
+.images-2{
+  position: absolute;;
+  z-index: 2;
+  top: 54px;
+  left: 211px;
+  right: 61px;
+  bottom: -219px;
+}
+
+.images-3{
+  position: absolute;;
+  z-index: 3;
+
+}
+
+.number-span span:not(:last-child){
+  margin-right: 100px;
+}
+
+.number-span{
+  color: #DAA520;
+  font-size: 36px;
+}
+
+.buttons .btn{
+  border-color: white;
+  color: black;
+}

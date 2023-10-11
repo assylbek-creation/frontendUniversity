@@ -1,0 +1,17 @@
+.page{
+  background-color: #fff;
+
+}
+.our_dishes{
+  color: #000;
+  text-align: center;
+  padding: 60px 0 120px 0;
+  font-size: 36px;
+}
+#dishes{
+  color: #d67e34;
+}
+
+.text-size{
+  font-size: 30px;
+}

@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h3, p {
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Form styles */
+.form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.form label, .form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.form input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-item {
+    margin-right: 20px;
+}
+
+.image-item:last-child {
+    margin-right: 0;
+}
+.image-item {
+    width: 500px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#name{
+    font-size: 14px;
+    color: red;
+}
+
+.image-container {
+    overflow: hidden;  /* This will contain floated elements */
+}
+
+.image-item {
+    float: left;       /* This makes the image divs align side by side */
+    margin-right: 10px;  /* Gives some spacing between the images */
+}
+
+/* This clears the float after the image items so that content below is displayed properly */
+.clear {
+    clear: both;
+}
+
+.forma{
+  padding: 10px;
+}
