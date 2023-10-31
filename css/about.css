@@ -28,7 +28,7 @@ p{
   position: relative;
 }
 
-.images-1{
+#myimage{
   position: absolute;;
   z-index: 3;
   top: 80px;
@@ -37,7 +37,7 @@ p{
   right: 228.600px;
 }
 
-.images-2{
+#myimage2{
   position: absolute;;
   z-index: 2;
   top: 54px;
@@ -46,10 +46,13 @@ p{
   bottom: -219px;
 }
 
-.images-3{
+#myimage3{
   position: absolute;;
   z-index: 3;
-
+  top: 280px;
+  left: 300px;
+  right: -34px;
+  bottom: -324px;
 }
 
 .number-span span:not(:last-child){
@@ -61,7 +64,49 @@ p{
   font-size: 36px;
 }
 
+.buttons{
+  position: absolute;
+  top: 320px;
+  left: 230px;
+}
+
 .buttons .btn{
   border-color: white;
   color: black;
+  transition: transform 0.3s;
+}
+
+.buttons .btn:hover{
+  transform: scale(0.95);
+}
+
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  display: block;
+  position: absolute;
+  top: 400px;
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+}
+
+.danger {
+  background-color: #fbd784;
+  border-left: 6px solid #f44336;
+  margin-top: 300px;
 }

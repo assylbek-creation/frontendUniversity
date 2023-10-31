@@ -8,7 +8,7 @@
 .menu-title{
   font-family: 'Tinos', serif;
   font-size: 54px;
-  padding-top: 60px;
+  padding-top: 10px;
   color: #fff;
   text-align: center;
   padding-bottom: 100px;
@@ -60,14 +60,6 @@
 
 .menu-img{
   border-radius: 200px;
-}
-
-.price-420{
-  position: absolute;
-  bottom: 28px;
-  right: 78px;
-  color: #fff;
-  font-size: 40px;
 }
 
 .menu-items{

@@ -5,10 +5,10 @@
     <title>About us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/about.css">
+
     <script src="https://kit.fontawesome.com/e4e53f0238.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/about.css">
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -18,10 +18,37 @@
   <body>
 
     <div class="container-fluid">
+      <div class="page container pt-4 mb-0 pb-0">
+
+          <div class="container3 row">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item ">
+                              <a class="nav-link" href="fon.html">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="about us.html">About us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="menu.html">Menu</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="brone.html">Reservation</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+        </div>
       <div class="row">
         <div class="col-lg-6 hist-text">
           <h1>Our <span id="history">History</span></h1>
-          <p>Like any other distinctive place, we have
+          <p id='history-text'>Like any other distinctive place, we have
           our own, special history. The idea of the restaurant came
           to the founders unexpectedly. While walking through the forest
           , the creator of our restaurant got stuck hundreds
@@ -46,14 +73,34 @@
 
         </div>
 
-        <div class="col-lg-6 history-assets">
-          <img class="assets-1" src="assets\233] 1.png" alt="food">
-          <img class="assets-2" src="assets\430 1.png" alt="food">
-          <img class="assets-3" src="assets\Mask Group.png" alt="food">
+        <div class="col-lg-6 history-images">
+          <div class="img-zoom-container">
+            <img id="myimage" src="assets\233] 1.png" width="300" height="400" alt="Girl">
+            <div id="myresult" class="img-zoom-result"></div>
+          </div>
+          <div class="img-zoom-container">
+            <img id="myimage2" src="assets\430 1.png" width="300" height="400" alt="Girl">
+            <div id="myresult2" class="img-zoom-result"></div>
+          </div>
+          <div class="img-zoom-container">
+            <img id="myimage3" src="assets\Mask Group.png" width="300" height="400" alt="Girl">
+            <div id="myresult3" class="img-zoom-result"></div>
+          </div>
         </div>
 
       </div>
+
+
     </div>
 
+    <div class="danger">
+      <p>Be with us...</p>
+    </div>
+    <script src="js/history.js"></script>
+    <script>
+    imageZoom("myimage", "myresult");
+    imageZoom("myimage2", "myresult2");
+    imageZoom("myimage3", "myresult3");
+    </script>
   </body>
 </html>
