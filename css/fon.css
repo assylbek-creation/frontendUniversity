@@ -18,6 +18,46 @@ li{
 img{
   vertical-align: top;
 }
+
+/* Применяем Flexbox к контейнеру с классом .navbar-collapse когда он раскрыт */
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяет пространство между элементами */
+    align-items: center; /* Центрирует элементы по вертикали */
+}
+
+@media screen and (max-width: 768px) { /* Адаптация под мобильные устройства */
+
+  #reserv{
+    display: none;
+    position: absolute;
+    margin-top: 100px;
+    width: 10px;
+    height: 10px;
+  }
+  .phone{
+    display: block;
+    width: 100%;
+    margin-left: 200px;
+  }  
+  .images-parallax__mountains {
+    display: none;
+    width: 10%;
+    height: 2%;
+  }
+
+  .images-parallax__human {
+    display: none;
+    width: 1%;
+    height: 1%;
+  }
+}
+
+
+
+
+
 h1,h2,h3,h4,h5,h6{
   font-weight: inherit;
   font-size: inherit;
@@ -38,7 +78,7 @@ html, body{
 ._container{
   max-width: 100%;
   margin: 0px auto;
-  padding: 50px 20px;
+  padding: 0px 20px;
 
 }
 .parallax{
@@ -125,7 +165,7 @@ html, body{
   width: 15%;
   height: 25%;
 }
-@@media (max-aspect-ratio: 3/2) {
+@media (max-aspect-ratio: 3/2) {
   .images-parallax__human{
     background-position: 20% top;
   }
@@ -143,7 +183,7 @@ html, body{
   width: 100%;
   height: 300px;
   transform: translate(0px, -100%);
-  background: linear-gradient(180deg, rgba(11, 29, 38, 0.1);)
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0.1));
 }
 .content_container{
 
@@ -153,7 +193,8 @@ html, body{
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 16px;
+  text-align: center;
   margin: 0px 0px 30px 0px;
 }
 .content__text{

@@ -14,7 +14,7 @@ const historysOb = {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.querySelectorAll(".btn");
+    let buttons = document.querySelectorAll(".btn-outline-secondary");
     let text = document.getElementById('history-text');
     let textOriginal = text.textContent;
     buttons.forEach((button, i) => {

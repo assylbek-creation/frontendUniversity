@@ -1,4 +1,10 @@
+body{
+  height: 100vh;
+  background: url('../assets/kit.jpg') top / cover no-repeat;;
+}
+
 .container-fluid{
+  width: 100wh;
   margin: 0 5%;
   font-family: Montserrat;
 }
@@ -9,10 +15,12 @@
 
 .hist-text{
   margin-top: 150px;
+  color: white;
 }
 
 h1{
   text-align: center;
+  color: white;
 }
 
 p{
@@ -26,6 +34,10 @@ p{
 
 .history-images{
   position: relative;
+}
+
+.history-images{
+  margin-top: 60px;
 }
 
 #myimage{
@@ -70,9 +82,26 @@ p{
   left: 230px;
 }
 
+@media (max-width:768px) {
+  .buttons{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+  }
+  .history-images{
+    display: none;
+  }
+  .collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+}
+
 .buttons .btn{
   border-color: white;
-  color: black;
+  color: #DAA520;
   transition: transform 0.3s;
 }
 
@@ -100,8 +129,8 @@ p{
   top: 400px;
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   z-index: 1000;
 }
 

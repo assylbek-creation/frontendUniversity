@@ -115,6 +115,19 @@ window.onload = function() {
     }
   });
 
+  let soundMouse = document.querySelectorAll(".nav-link");
+
+  console.log(soundMouse)
+
+  soundMouse.forEach((pic, index) =>{
+    pic.addEventListener('click', function(){
+      const audioMouse = document.getElementById('cartSound');
+      audioMouse.play();
+      console.log(audioMouse)
+      console.log(index)
+
+    })
+  })
 
 
 }

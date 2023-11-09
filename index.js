@@ -40,32 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const hamburger = hamburgers[keys[index]];
             console.log(index);
             if (hamburger) {
-                const correspondingText = dishTexts[index];
-                correspondingText.textContent = `${hamburger.name}................................${hamburger.price}`;
-                correspondingText.style.color = '#d67e34';  // Меняем цвет текста на красный
+                correspondingText.style.color = 'rgb(253, 186, 147)';  // Меняем цвет текста на красный
             }
         });
     });
 
-    // Обработчик для элемента "Наши блюда"
-    ourDishes.addEventListener("click", function () {
-        if (ourDishesMusic.paused) {
-            ourDishesMusic.play();
-        } else {
-            ourDishesMusic.pause(); // Останавливаем музыку
-            ourDishesMusic.currentTime = 0; // Сбрасываем время воспроизведения музыки к началу
-        }
-
-        // Анимация для текста "Наши блюда"
-        ourDishes.style.transition = "all 0.5s";
-        ourDishes.style.transform = "scale(1.2)";
-        setTimeout(() => {
-            ourDishes.style.transform = "scale(1)";
-        }, 500);
-
-        // Показать модальное окно
-        modal.style.display = "block";
-    });
 
     // Обработчики для закрытия модального окна
     span.onclick = function() {
@@ -76,11 +55,50 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none";
         }
     }
+    document.addEventListener('keypress', function(e){
+        if(e.key == 'C' || e.key == 'c'){
+            if (ourDishesMusic.paused) {
+                ourDishesMusic.play();
+            } else {
+                ourDishesMusic.pause(); // Останавливаем музыку
+                ourDishesMusic.currentTime = 0; // Сбрасываем время воспроизведения музыки к началу
+            }
+            ourDishes.style.transition = "all 0.5s";
+            ourDishes.style.transform = "scale(1.2)";
+            setTimeout(() => {
+                ourDishes.style.transform = "scale(1)";
+            }, 500);
 
-    // Переключаем тему на тёмную/светлую при нажатии клавиши "d" или "D"
-    document.addEventListener("keypress", function (e) {
-        if (e.key === "d" || e.key === "D") {
-            document.body.classList.toggle("dark-mode");
+
+    
+            // Показать модальное окно
+            modal.style.display = "block";
+
+            btn.onclick = function(e){
+                var userInput = document.getElementById("myInput").value;
+                if(userInput.toLowerCase() === 'best'){
+                    alert('Congratulations! You have applied the promo code.');
+                }
+                else{
+                    alert('Incorrect Promocode')
+                }
+            }
+            
         }
-    });
+
+    })
+
 });
+
+
+let soundMouse = document.querySelectorAll(".nav-link");
+console.log(soundMouse)
+soundMouse.forEach((pic, index) =>{
+    pic.addEventListener('click', function(){
+      const audioMouse = document.getElementById('mouse');
+      audioMouse.play();
+      console.log(audioMouse)
+      console.log(index)
+
+    })
+  })
